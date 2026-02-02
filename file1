@@ -1,0 +1,26 @@
+pipline {
+  agent any
+  stages{
+    stage ('fetching the code from github repo') {
+      steps {
+        git branch: 'main' , 
+	  }
+    stage ('maven build') {
+      steps {
+          echo "it is a build step"
+	  }
+	}
+	        }
+    stage ('testing stage') {
+      steps {
+          echo "it is a testing stage"
+          }
+	}
+           }
+    stage ('deploy stage') {
+      steps {
+          echo "it is deploy stage"
+          }
+	}
+       }
+      } 
