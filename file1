@@ -1,10 +1,11 @@
 pipline {
   agent any
-  stages{
+  stages {
     stage ('fetching the code from github repo') {
       steps {
         git branch: 'main' , 'https://github.com/dhanunjayasneha/maven.git'
 	  }
+   }
     stage ('maven build') {
       steps {
           echo "it is a build step"
