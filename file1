@@ -3,7 +3,7 @@ pipline {
   stages{
     stage ('fetching the code from github repo') {
       steps {
-        git branch: 'main' , 
+        git branch: 'main' , 'https://github.com/dhanunjayasneha/maven.git'
 	  }
     stage ('maven build') {
       steps {
